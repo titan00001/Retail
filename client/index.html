@@ -23,47 +23,331 @@
 
     </header>
 
-    <section>
+    
+    <section id="input">
+
         <h2>
             Input
         </h2>
 
-        <form action="" method="post">
 
-            <label for="item-name">Item Name</label>
-            <input type="text">
+        <div class="section-container">
+            <div class="sidebar">
 
-            <br>
+                <nav class="content">
+                    <a href="">New</a>
+                    <a href="">Save</a>
+                    <a href="">Recent</a>
+                </nav>
+        
+            </div>
 
-            <label for="item-unit">Item Units</label>
-            <input type="number" name="" id="">
-            <select id="unit" name="unit">
-                <option value="packets">Packets</option>
-                <option value="pieces">Pieces</option>
-                <option value="kilogram">kilogram</option>
-                <option value="gram">gram</option>
-            </select>
+            <form action="" method="post">
+
+                <div class="client-details">
+                    <div class="customer-name">
+                        <label class="customer-label" for="customer-name">Agency Name</label>
+                        <input class="customer-data" type="text">
+                    </div>
+        
+                    <div class="customer-tax">
+                        <label class="customer-label" for="customer-name">Agency Tax</label>
+                        <input class="customer-data" type="text">
+                    </div>
+                </div>
+                
+                <div class="table-container">
+
+                    <table id="output">
             
-            <br>
+                        <tr class="table-head">
 
-            <label for="item-mfg-date">Item Manufacturing Date</label>
-            <input type="date" name="" id="">
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Mfg Date</th>
+                            <th>Expiry Date</th>
+                            <th>Purchase</th>
+                            <th>Status</th>
+            
+                        </tr>
+            
+                        <tr class="table-data">
 
-            <br>
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td><input class="item-data" type="number"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="packets">Packets</option>
+                                    <option value="pieces">Pieces</option>
+                                    <option value="kilogram">kilogram</option>
+                                    <option value="gram">gram</option>
+                                </select>
+                            </td>
 
-            <label for="item-exp-date">Item Expiry Date</label>
-            <input type="date" name="" id="">
+                            <td><input class="item-data" type="date" name="" id=""></td>
 
-            <br>
+                            <td><input class="item-data" type="date" name="" id=""></td>
+            
+                            <td><input class="item-data" type="number"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="None">None</option>
+                                    <option value="Inventory">Inventory</option>
+                                    <option value="Not-Arrived">Yet to Arrive</option>
+                                    <option value="Expired">Expired</option>
+                                    <option value="Damaged">Damaged</option>
+                                </select>
+                            </td>
+                        </tr>
 
-            <input type="submit" value="Add New">
+                        <tr class="table-data">
 
-            <br>
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td><input class="item-data" type="number"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="packets">Packets</option>
+                                    <option value="pieces">Pieces</option>
+                                    <option value="kilogram">kilogram</option>
+                                    <option value="gram">gram</option>
+                                </select>
+                            </td>
 
-            <input type="submit" value="Submit">
+                            <td><input class="item-data" type="date" name="" id=""></td>
+
+                            <td><input class="item-data" type="date" name="" id=""></td>
+            
+                            <td><input class="item-data" type="number"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="None">None</option>
+                                    <option value="Inventory">Inventory</option>
+                                    <option value="Not-Arrived">Yet to Arrive</option>
+                                    <option value="Expired">Expired</option>
+                                    <option value="Damaged">Damaged</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
 
 
-        </form>
+                <div class="button">
+                    <input class="form-button" type="submit" value="Add New">
+                
+                    <input class="form-button" type="submit" value="Submit">
+                </div>
+
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- ---------------------------------------------Output----------------------------------------------------------- -->
+    <section id="output">
+
+        <h2>
+            Output
+        </h2>
+
+
+        <div class="section-container">
+
+            <div class="sidebar">
+
+                <nav class="content">
+                    <a href="">Input</a>
+                    <a href="">Output</a>
+                    <a href="">Inventory</a>
+                    <a href="">Analysis</a>
+                    <a href="">Profile</a>
+                </nav>
+        
+            </div>
+            <form action="" method="post">
+                
+                <div class="client-details">
+                    <div class="customer-name">
+                        <label class="customer-label" for="customer-name">Customer Name</label>
+                        <input class="customer-data" type="text">
+                    </div>
+        
+                    <div class="customer-tax">
+                        <label class="customer-label" for="customer-name">Customer Tax</label>
+                        <input class="customer-data" type="text">
+                    </div>
+                </div>
+                
+
+                <div class="table-container">
+                    
+                    <table id="output">
+            
+                        <tr class="table-head">
+
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Selling</th>
+                            <th>Status</th>
+            
+                        </tr>
+            
+                        <tr class="table-data">
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="packets">Packets</option>
+                                    <option value="pieces">Pieces</option>
+                                    <option value="kilogram">kilogram</option>
+                                    <option value="gram">gram</option>
+                                </select>
+                            </td>
+            
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="None">None</option>
+                                    <option value="Inventory">Inventory</option>
+                                    <option value="Not-Arrived">Yet to Arrive</option>
+                                    <option value="Expired">Expired</option>
+                                    <option value="Damaged">Damaged</option>
+                                </select>
+                            </td>
+                        </tr>
+            
+                        <tr class="table-data">
+                            <td><input class="item-data" type="text"></td>
+                            
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="packets">Packets</option>
+                                    <option value="pieces">Pieces</option>
+                                    <option value="kilogram">kilogram</option>
+                                    <option value="gram">gram</option>
+                                </select>
+                            </td>
+            
+                            <td><input class="item-data" type="text"></td>
+            
+                            <td>
+                                <select class="item-data" id="unit" name="unit">
+                                    <option value="None">None</option>
+                                    <option value="Inventory">Inventory</option>
+                                    <option value="Not-Arrived">Yet to Arrive</option>
+                                    <option value="Expired">Expired</option>
+                                    <option value="Damaged">Damaged</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                
+
+                <div class="button" id="output-button">
+                    <input class="form-button" type="submit" value="Add New">
+                
+                    <input class="form-button" type="submit" value="Submit">
+                </div>
+
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------Output----------------------------------------------------------- -->
+
+    <section id="inventory">
+
+        <h2>
+            Inventory
+        </h2>
+
+
+        <div class="section-container">
+
+            <div class="sidebar">
+
+                <nav class="content">
+                    <a href="">Monthly Changes</a>
+                    <a href="">Weekly Changes</a>
+                    <a href="">Edit Inventory</a>
+                    <a href="">Current Inventory</a>
+                </nav>
+        
+            </div>
+            <div class="table-container">
+
+                <table id="current">
+
+                    <caption>Current Inventory</caption>
+
+                    <tr class="table-head">
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Unit</th>
+                        <th>Expiry</th>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Salt</td>
+                        <td>50</td>
+                        <td>kg</td>
+                        <td>3 months</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Tomato</td>
+                        <td>70</td>
+                        <td>kg</td>
+                        <td>4 days</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Potato</td>
+                        <td>150</td>
+                        <td>kg</td>
+                        <td>6 days</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Lemonade</td>
+                        <td>450</td>
+                        <td>packets</td>
+                        <td>6 months</td>
+                    </tr>
+
+                    <tr class="table-data">
+                        <td>Chocolate Syrup</td>
+                        <td>700</td>
+                        <td>packets</td>
+                        <td>2 yrs</td>
+                    </tr>
+        
+                </table>
+
+            </div>
+        </div>
+
     </section>
 
 

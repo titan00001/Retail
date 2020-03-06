@@ -33,25 +33,32 @@ header, footer {
     background-color: var(--main-color-2);
 }
 
+
 /* ===============================================  Header  ================================================================ */
 header {
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 25px 10px 10px;
     /* border-bottom:2px solid var(--main-color-3) ; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
 
+    margin: 0;
     font-size: 50px;
-    margin-bottom: 55px;
+
+    flex: 60% .5 2;
 }
 
 header > nav {
 
-    margin-bottom: 0px;
-    
+    flex: 40% 2 0.5;
+    display: flex;
+    flex-direction: row;
 }
 
 header > nav > a {
@@ -60,6 +67,8 @@ header > nav > a {
     color: var(--main-color-1);
     padding: 10px;
     font-weight: bold;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 
@@ -87,19 +96,137 @@ footer > p {
     margin: 15px 0 5px 0;
 }
 
-
 /* ===============================================  Section  ================================================================ */
+
+section {
+    padding: 10px;
+}
+
+.sidebar {
+    padding: 15px 10px;
+    width: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content > a {
+    background-color: var(--main-color-5);
+    color: var(--main-color-1);
+    padding: 3px;
+    margin: 2px 0;
+}
 
 section > h2 {
     font-size: 35px;
+    border-bottom: 2px solid black;
 }
 
-form > label {
+.section-container {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.item-label {
+
+    display: block;
+    color: var(--main-color-4);
+    margin: 20px;
+}
+
+form {
+    border: 2px solid var(--main-color-3);
+    border-radius: 20px;
+    padding: 10px;
+
+    flex: 90%;
+}
+
+input, select {
+
+    display: block;
+    height: 25px;
+    width: 150px;
+    border: 2px solid var(--main-color-3);
+    border-radius: 5px;
+    background-color: var(--main-color-1);
+    padding: 3px 5px 3px 5px;
+    color: var(--main-color-3);
+
+}
+
+select {
+    height: 40px;
+    width: 150px;
+}
+
+input[type = date] {
+    width: min-content;
+}
+
+input[type = submit] {
+
+    background-color: var(--main-color-5);
+    color: var(--main-color-1);
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    margin: 50px 20px 10px 20px;
+    font-weight: bold;
+}
+
+
+/* ====================================================  customer  ======================================================== */
+
+
+
+.client-details > div {
+
+    margin: 10px 0px 10px 20px;
+}
+
+.customer-label {
 
     color: var(--main-color-4);
 }
 
-input {
 
-    
+/* ====================================================  table  ======================================================== */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+
+    border: 2px solid var(--main-color-3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px 10px 20px;
+}
+
+
+th, td {
+
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.table-head {
+
+    color: var(--main-color-4);
+    border-bottom: 2px solid var(--main-color-4);
+}
+
+caption {
+    margin: 15px;
+    color: var(--main-color-5);
+}
+
+.table-data {
+
+    color: var(--main-color-3);
 }
