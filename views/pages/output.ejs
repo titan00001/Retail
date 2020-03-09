@@ -1,0 +1,74 @@
+<%- include('../partials/header') %> 
+
+<section id="output">
+
+    <h2>
+        Output
+    </h2>
+
+
+    <div class="section-container">
+
+        <div class="sidebar">
+
+            <nav class="content">
+                <a href="">Input</a>
+                <a href="">Output</a>
+                <a href="">Inventory</a>
+                <a href="">Analysis</a>
+                <a href="">Profile</a>
+            </nav>
+    
+        </div>
+        <form action="/output" method="post">
+            
+            <div class="client-details">
+                <div class="customer-name">
+                    <label class="customer-label" for="customer-name">Customer Name</label>
+                    <input class="customer-data" type="text">
+                </div>
+    
+                <div class="customer-tax">
+                    <label class="customer-label" for="customer-name">Customer Tax</label>
+                    <input class="customer-data" type="text">
+                </div>
+            </div>
+            
+
+            <div class="table-container">
+                
+                <table id="output">
+        
+                    <tr class="table-head">
+
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Unit</th>
+                        <th>Selling</th>
+                        <th>Status</th>
+        
+                    </tr>
+        
+                    <% for( let index = 0; index < locals.row; index++ ) { %>
+                        <%- include('../partials/OutputRow') %> 
+                    <% } %>
+
+                </table>
+
+            </div>
+
+            
+
+            <div class="button" id="output-button">
+                <a href="/addOutputRow" class="form-link">Add Row</a>
+            
+                <input class="form-button" type="submit" value="Submit">
+            </div>
+
+
+        </form>
+
+    </div>
+</section>
+
+<%- include('../partials/footer') %> 
